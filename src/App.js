@@ -731,7 +731,7 @@ export default class App extends React.Component {
 												<br />
 												如果右邊顯示無法加載，請至Chrome商店下載"
 												<b>Ignore X-Frame headers</b>
-												"或同類功能插件以接觸封印。
+												"或同類功能插件以解除封印。
 												<br />
 												<br />
 												<b>跳轉鏈接</b>
