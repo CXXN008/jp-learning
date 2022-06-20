@@ -38,6 +38,7 @@ export default class App extends React.Component {
 		// 	this.setState({ infoText: s })
 		// 	f(s)
 		// }
+		// console.log(document.querySelector(''))
 	}
 
 	componentDidUpdate() {}
@@ -736,7 +737,7 @@ export default class App extends React.Component {
 												"或同類功能插件以解除封印。
 												<br />
 												<br />
-												<b>跳轉鏈接</b>
+												<b>someLinks</b>
 											</p>
 											<button
 												className="btn btn-md btn-primary normal-case"
@@ -768,6 +769,26 @@ export default class App extends React.Component {
 											>
 												墻内鏡像
 											</button>
+											<div className="flex self-center justify-center my-4">
+												<img
+													src={
+														process.env.PUBLIC_URL +
+														'github.png'
+													}
+													className="w-8"
+												/>
+
+												<button
+													className="btn btn-sm self-center"
+													onClick={() => {
+														window.open(
+															'https://github.com/cccccccccccccccccccccccccccccccccccccc/jp-learning'
+														)
+													}}
+												>
+													源碼
+												</button>
+											</div>
 										</div>
 									</div>
 								</div>
