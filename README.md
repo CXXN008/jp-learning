@@ -6,7 +6,7 @@ A small tool i wrote for learning purpose
 
 npm command see `package.json` **script:**
 
-![preview](https://https://raw.githubusercontent.com/cccccccccccccccccccccccccccccccccccccc/jp-learning/master/project_preview.png)
+![preview](https://raw.githubusercontent.com/cccccccccccccccccccccccccccccccccccccc/jp-learning/master/project_preview.png)
 
 
 > This app may occur some glitch on the mobile device,havnt test yet
