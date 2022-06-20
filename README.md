@@ -6,6 +6,6 @@
 
 npm command see `package.json` **script:**
 
-![alt](https://)
+![preview](https://https://raw.githubusercontent.com/cccccccccccccccccccccccccccccccccccccc/jp-learning/master/project_preview.png)
 
 
