@@ -166,6 +166,7 @@ export default class App extends React.Component {
 			})
 			.then(
 				function success(text) {
+					// eslint-disable-next-line
 					that.data = eval(text)
 					that.setState({
 						infoText: 'evaled object ...',
@@ -188,10 +189,11 @@ export default class App extends React.Component {
 	}
 
 	calcTotalTypeCount() {
+		let temp = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 		this.data.forEach((d) => {
-			this.state.wholeFileTypeCount[d[3]]++
+			temp[d[3]]++
 		})
-		console.log(this.state.wholeFileTypeCount)
+		this.setState({ wholeFileTypeCount: temp })
 	}
 
 	// org json
