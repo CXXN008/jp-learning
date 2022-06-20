@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "jpdb query tool",
+  "name": "jpdb query tool",
   "icons": [
     {
       "src": "favicon.ico",
