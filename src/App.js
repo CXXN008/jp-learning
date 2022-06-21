@@ -720,6 +720,10 @@ export default class App extends React.Component {
 												左上角下拉框選擇一個數據源 =&gt;
 												load json 即可加載列表
 												<br />
+												<i className='text-sm'>
+													將列出ACGN作品最常用top9k~50w單詞，點擊以查詢
+												</i>
+												<br />
 												<br />
 												<b>其他説明</b>
 												<br />
@@ -769,8 +773,14 @@ export default class App extends React.Component {
 											>
 												墻内鏡像
 											</button>
-											<div className="flex self-center justify-center my-4">
+											<div className="flex self-center justify-center my-4 cursor-alias">
 												<img
+													onClick={() => {
+														window.open(
+															'https://github.com/cccccccccccccccccccccccccccccccccccccc/jp-learning'
+														)
+													}}
+												alt='github-icon'
 													src={
 														process.env.PUBLIC_URL +
 														'github.png'
@@ -779,7 +789,7 @@ export default class App extends React.Component {
 												/>
 
 												<button
-													className="btn btn-sm self-center"
+													className="btn btn-sm self-center cursor-alias"
 													onClick={() => {
 														window.open(
 															'https://github.com/cccccccccccccccccccccccccccccccccccccc/jp-learning'
