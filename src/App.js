@@ -1,5 +1,4 @@
 import React from 'react'
-
 const HOST = window.location.origin
 const FILENAME = ['top8k', 'top2w', 'top5w', 'top18w']
 const ZIPPATH = [
@@ -26,6 +25,7 @@ const MODE = [
 	'katakana + kanji',
 	'other',
 ]
+
 export default class App extends React.Component {
 	componentDidMount() {
 		// ui fix
@@ -38,7 +38,7 @@ export default class App extends React.Component {
 		// 	this.setState({ infoText: s })
 		// 	f(s)
 		// }
-		// console.log(document.querySelector(''))
+
 		this.setState({ currentFrameUrl: `${process.env.PUBLIC_URL}dvd.html` })
 	}
 
@@ -702,7 +702,7 @@ export default class App extends React.Component {
 							/>
 						</label>
 					</div>
-					<span className="self-center text-sm  absolute top-0 z-0 right-0  text-green-400 bg-black px-1">
+					<span className="self-center text-xs  absolute top-0 z-0 right-0  text-green-400 bg-black px-1">
 						{this.state.infoText}
 					</span>
 				</header>
@@ -814,6 +814,7 @@ export default class App extends React.Component {
 						title="jpdb"
 						className="w-1/2 right-0 fixed shadow-lg"
 						width="100%"
+						loading="lazy"
 						height="100%"
 						frameBorder="0"
 						allowtransparency="true"

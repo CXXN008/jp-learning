@@ -1,7 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-	darkMode: 'class',
+	daisyui:{
+		themes:false
+	},
 	content: ['./src/**/*.{js,jsx,ts,tsx}'],
+	themes:false,
 	theme: {
 		extend: {
 			// that is animation class
@@ -9,7 +12,6 @@ module.exports = {
 				fadeDeep: 'fade100 .5s ease-in-out',
 				fadeShallow: 'fade50 .5s ease-in-out',
 			},
-
 			// that is actual animation
 			keyframes: (theme) => ({
 				fade50: {
