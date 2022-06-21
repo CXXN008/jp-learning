@@ -38,8 +38,8 @@ export default class App extends React.Component {
 		// 	this.setState({ infoText: s })
 		// 	f(s)
 		// }
-
 		this.setState({ currentFrameUrl: `${process.env.PUBLIC_URL}dvd.html` })
+		// console.log(process.env)
 	}
 
 	componentDidUpdate() {}
@@ -56,7 +56,7 @@ export default class App extends React.Component {
 			// [hiragana,katakana,kanji]
 			offset: 0,
 			showWholeTypeCount: true,
-			infoText: 'idle',
+			infoText: 'idle / version : '+process.env.REACT_APP_VERSION,
 			viewLevel: 1,
 			sliderHint: this.termBlock * 1,
 			selectOption: 'default',
