@@ -39,6 +39,7 @@ export default class App extends React.Component {
 		// 	f(s)
 		// }
 		// console.log(document.querySelector(''))
+		this.setState({ currentFrameUrl: `${process.env.PUBLIC_URL}dvd.html` })
 	}
 
 	componentDidUpdate() {}
@@ -73,7 +74,7 @@ export default class App extends React.Component {
 				true,
 				true,
 			],
-			currentFrameUrl: `${process.env.PUBLIC_URL}dvd.html`,
+			currentFrameUrl: '',
 			dataReady: false,
 			loading: false,
 			jdata: [],
@@ -720,7 +721,7 @@ export default class App extends React.Component {
 												左上角下拉框選擇一個數據源 =&gt;
 												load json 即可加載列表
 												<br />
-												<i className='text-sm'>
+												<i className="text-sm">
 													將列出ACGN作品最常用top9k~50w單詞，點擊以查詢
 												</i>
 												<br />
@@ -780,7 +781,7 @@ export default class App extends React.Component {
 															'https://github.com/cccccccccccccccccccccccccccccccccccccc/jp-learning'
 														)
 													}}
-												alt='github-icon'
+													alt="github-icon"
 													src={
 														process.env.PUBLIC_URL +
 														'github.png'
